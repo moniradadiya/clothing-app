@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 import './App.css';
+import Header from './component/header/header.component';
 import HomePages from './pages/homepages/homepages.component';
 import ShopPage from './pages/shoppage/shoppage.component';
 
@@ -16,12 +17,15 @@ import ShopPage from './pages/shoppage/shoppage.component';
 
 
 function App() {
-  return (     
+  return (  
+       <>
+    <Header/>
       <Routes>
         <Route exact path="/" element={ <HomePages /> } />
         <Route exact path="/shop" element={ <ShopPage />} />
 
       </Routes>
+      </>
   );
 }
 
