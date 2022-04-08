@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from '../../assets/logo.jpg';
+import {HiOutlineShoppingBag} from 'react-icons/hi';
 
 
 
@@ -24,6 +25,19 @@ const Header = () => (
             <Link className="option" to="/shop">
             CONTACT
             </Link>
+            {/* <div>  */}
+              {/* currentUser ?
+              <div className="option" onClick={() => auth.signOut()}>SIGN OUT </div> */}
+             {/* <Link>SIGN OUT</Link>
+             </div>  */}
+             <Link className="option" to="/signin">
+            SIGN UP
+            </Link>
+            <Link className="option" to="/shop">
+            <HiOutlineShoppingBag/>
+            </Link>
+            
+            
 
         </div>
 
