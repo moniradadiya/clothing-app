@@ -1,14 +1,15 @@
-import React from "react";
+import { React, Component } from "react";
 import { Link } from "react-router-dom";
 import CustomButton from "../custom-button/custom-button.component";
-// import SignInAndSignUpPage from "../../pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
+import { signInWithGoogle } from "../../firebase/firebase.utils";
+
 
 
 import FormInput from "../form-input/form-input.component";
 
 import '../sign-in/sign-in.style.scss'
 
-class SignIn extends React.Component{
+class SignIn extends Component{
     constructor(props) {
       super(props)
     
@@ -51,9 +52,14 @@ class SignIn extends React.Component{
                      label='password'
                       required/>
                     
-
+                    <diiv className='buttons'>
                     <CustomButton type="submit">SIGN IN</CustomButton>
-                    <CustomButton>SIGN IN WITH GOOGLE</CustomButton>
+                    { <CustomButton onClick={signInWithGoogle} isGoogleSignIn> 
+                     { '' }
+                     SIGN IN WITH GOOGLE  { '' }
+                        </CustomButton> }
+                        </diiv>
+                    
                 </form>
             </div>
         );
