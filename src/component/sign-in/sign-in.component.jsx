@@ -1,7 +1,7 @@
 import { React, Component } from "react";
 import { Link } from "react-router-dom";
 import CustomButton from "../custom-button/custom-button.component";
-import { signInWithGoogle } from "../../firebase/firebase.utils";
+import { auth, signInWithGoogle } from "../../firebase/firebase.utils";
 
 
 
@@ -20,8 +20,16 @@ class SignIn extends Component{
     }
 
 
- handleSubmit = event => {
+ handleSubmit = async event => {
      event.preventDefault();
+
+     const { email, password } = this.state;
+     
+     try{
+         await auth.signInWithEmailAndPassword(email, password);
+     }catch(error) {
+         console.log(error);
+     }
 
      this.state({email: '', password: ''})
  }
@@ -47,7 +55,7 @@ class SignIn extends Component{
                     <FormInput
                     name="password" 
                     type="password"
-                     value={this.state.email}
+                     value={this.state.password}
                      handleChange={this.handleChange}
                      label='password' 
                      autoComplete='off'
