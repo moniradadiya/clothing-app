@@ -42,23 +42,25 @@ class SignIn extends Component{
                 <span>Sign in with your email and password</span>
 
                 <form onSubmit={this.handleSubmit}>
-                    <FormInput name="email" type="email" handleChange={this.handleChange} value={this.state.email} label='email' required/>
+                    <FormInput name="email" type="email" handleChange={this.handleChange} value={this.state.email} label='email' required />
                     
                     <FormInput
                     name="password" 
                     type="password"
                      value={this.state.email}
                      handleChange={this.handleChange}
-                     label='password'
-                      required/>
+                     label='password' 
+                     autoComplete='off'
+                      required />
+                        
                     
-                    <diiv className='buttons'>
+                    <div className='buttons'>
                     <CustomButton type="submit">SIGN IN</CustomButton>
                     { <CustomButton onClick={signInWithGoogle} isGoogleSignIn> 
                      { '' }
                      SIGN IN WITH GOOGLE  { '' }
                         </CustomButton> }
-                        </diiv>
+                        </div>
                     
                 </form>
             </div>

@@ -13,7 +13,7 @@
     font-weight: bolder;
     border: none;
     cursor: pointer;
-    // margin-right: 21px;
+    margin-right: 8px;
 
     &:hover{
         background-color: white;
@@ -30,9 +30,9 @@
         border: none;
 
     }
-    .buttons{
-        display: flex;
-        justify-content: space-between;
-    }
-
+    
+}
+.button{
+    display: flex;
+    justify-content: space-between;
 }
