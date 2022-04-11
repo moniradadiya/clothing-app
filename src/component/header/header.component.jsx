@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 import Logo from '../../assets/logo.jpg';
 // import {HiOutlineShoppingBag} from 'react-icons/hi';
 import { auth } from "../../firebase/firebase.utils";
@@ -32,11 +33,16 @@ const Header = ({currentUser}) => (
                 :
                 <Link  className="option" to='/signin'>SIGN IN </Link>
             }
-
+            {/* <Cart currentUser={currentUser}/> */}
             
         </div>
 
     </div>
 );
 
-export default Header;
+const mapSateToProps = state => ({
+    currentUser: state.user.currentUser
+
+})
+
+export default connect(mapSateToProps) (Header);
