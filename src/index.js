@@ -15,6 +15,6 @@ root.render(
     <App />
   </BrowserRouter>
   </Provider>,   
-);
+); 
 
 export default BrowserRouter;
