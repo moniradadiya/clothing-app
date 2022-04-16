@@ -5,72 +5,28 @@
         routerName: 'Hats',
         items: [
             {
-                id: 1,
-                name:'Brown brim',
-                imageUrl:'/image/img.jpeg',
-                price: 45
-            },
-            {
-                id: 2,
-                name:'Brown brim',
-                imageUrl:'/image/img.jpeg',
-                price: 45
-            },
-            {
-                id: 3,
-                name:'Brown brim',
-                imageUrl:'/image/img.jpeg',
-                price: 45
-            },
-            {
-                id: 4,
-                name:'Brown brim',
-                imageUrl:'/image/img.jpeg',
-                price: 45
-            },
-            {
-                id: 5,
-                name:'Brown brim',
-                imageUrl:'/image/img.jpeg',
-                price: 45
-            },
-            {
                 id: 6,
-                name:'Brown brim',
+                name:'Brown',
                 imageUrl:'/image/img.jpeg',
-                price: 45
+                price: 54
             },
             {
                 id: 7,
-                name:'Brown brim',
+                name:'Brown Car',
                 imageUrl:'/image/img.jpeg',
-                price: 45
+                price: 76
             },
             {
                 id: 8,
-                name:'Brown brim',
+                name:'Brown Cap',
                 imageUrl:'/image/img.jpeg',
-                price: 45
-            },
-        ]
-    },
-
-    {
-        id: 2,
-        title: 'Jackets',
-        routerName: 'Jackets',
-        items: [
-            {
-                id: 8,
-                name:'Brown brim',
-                imageUrl:'/image/img.jpeg',
-                price: 45
+                price: 87
             },
             {
                 id: 9,
-                name:'Brown brim',
+                name:'Brown Aht',
                 imageUrl:'/image/img.jpeg',
-                price: 45
+                price: 8
             },
             {
                 id: 10,
@@ -96,6 +52,14 @@
                 imageUrl:'/image/img.jpeg',
                 price: 45
             },
+        ]
+    },
+
+    {
+        id: 2,
+        title: 'Jackets',
+        routerName: 'Jackets',
+        items: [
             {
                 id: 14,
                 name:'Brown brim',
@@ -108,15 +72,6 @@
                 imageUrl:'/image/img.jpeg',
                 price: 45
             },
-        ]
-    },
-  
-  
-    {
-        id: 3,
-        title: 'Sneakers',
-        routerName: 'Sneakers',
-        items: [
             {
                 id: 16,
                 name:'Brown brim',
@@ -153,6 +108,15 @@
                 imageUrl:'/image/img.jpeg',
                 price: 45
             },
+        ]
+    },
+  
+  
+    {
+        id: 3,
+        title: 'Sneakers',
+        routerName: 'Sneakers',
+        items: [
             {
                 id: 22,
                 name:'Brown brim',
@@ -165,14 +129,6 @@
                 imageUrl:'/image/img.jpeg',
                 price: 45
             },
-        ]
-    },
-
-    {
-        id: 4,
-        title: 'Womens',
-        routerName: 'Womens',
-        items: [
             {
                 id: 24,
                 name:'Brown brim',
@@ -209,6 +165,14 @@
                 imageUrl:'/image/img.jpeg',
                 price: 45
             },
+        ]
+    },
+
+    {
+        id: 4,
+        title: 'Womens',
+        routerName: 'Womens',
+        items: [
             {
                 id: 30,
                 name:'Brown brim',
@@ -221,14 +185,6 @@
                 imageUrl:'/image/img.jpeg',
                 price: 45
             },
-        ]
-    },
-    
-    {
-        id: 5,
-        title: 'Mens',
-        routerName: 'Mens',
-        items: [
             {
                 id: 32,
                 name:'Brown brim',
@@ -265,6 +221,14 @@
                 imageUrl:'/image/img.jpeg',
                 price: 45
             },
+        ]
+    },
+    
+    {
+        id: 5,
+        title: 'Mens',
+        routerName: 'Mens',
+        items: [
             {
                 id: 38,
                 name:'Brown brim',
@@ -274,6 +238,42 @@
             {
                 id: 39,
                 name:'Brown brim',
+                imageUrl:'/image/img.jpeg',
+                price: 45
+            },
+            {
+                id: 40,
+                name:'Brown brim',
+                imageUrl:'/image/img.jpeg',
+                price: 45
+            },
+            {
+                id: 41,
+                name:'Brown brim',
+                imageUrl:'/image/img.jpeg',
+                price: 45
+            },
+            {
+                id: 42,
+                name:'Brown brim',
+                imageUrl:'/image/img.jpeg',
+                price: 45
+            },
+            {
+                id: 43,
+                name:'Brown brim',
+                imageUrl:'/image/img.jpeg',
+                price: 45
+            },
+            {
+                id: 44,
+                name:'Brown brim',
+                imageUrl:'/image/img.jpeg',
+                price: 45
+            },
+            {
+                id: 45,
+                name:'Brown brim',  
                 imageUrl:'/image/img.jpeg',
                 price: 45
             },
