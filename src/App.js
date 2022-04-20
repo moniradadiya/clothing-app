@@ -25,6 +25,7 @@ import { selectCurrentUser } from './redux/user/user.selector';
 
 
 
+
 class App extends React.Component {
   
   unsubscribeFromAuth = null;
@@ -64,13 +65,13 @@ class App extends React.Component {
       
      <Routes>
        <Route exact path="/" element={ <HomePages /> } />
-       <Route exact path="/shop" element={ <ShopPage />} />
-       <Route exact path="/checkout" element={ <CheckoutPage />} /> 
+       <Route exact path="/shop" element={  <CheckoutPage/>} />
+       {/* <Route exact path='/checkout' element={ <CheckoutPage/>} */}
+       {/* <Route exact path="/checkout" element={ <CollectionPage/>} />  */}
        {/* <Route exact path='/signin' render={() => this.props.currentUser ? ( <HomePages />  ) : (<SignInAndSignUpPage/> )} /> */}
       <Route exact path='/signin' element={ <SignInAndSignUpPage /> } />
      </Routes>
-     
-     
+       
      </>
  );
 

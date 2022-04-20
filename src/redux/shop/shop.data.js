@@ -1,8 +1,8 @@
  const SHOP_DATA = [
-    {
+        {
         id: 1,
         title: 'Hats',
-        routerName: 'Hats',
+        routerName: 'hats',
         items: [
             {
                 id: 6,

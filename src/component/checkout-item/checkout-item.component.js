@@ -5,7 +5,7 @@ import { clearItemFromCart, addItem, removeItem } from "../../redux/cart/cart.ac
 import '../checkout-item/checkout-item.style.scss';
 
 const CheckoutItem = ({cartItem, clearItem, addItem, removeItem}) => {
-    const {name, imageUrl, price, quantity} = cartItem;
+    const {name, imageUrl, price, quantity, total} = cartItem;
    return(
     <div className="checkout-item">
         <div className="image-container">
@@ -18,6 +18,7 @@ const CheckoutItem = ({cartItem, clearItem, addItem, removeItem}) => {
            <span className="value"> {quantity}</span>
             <div className="arrow" onClick={() => addItem(cartItem)}>&#10095;</div></span>
         <span className="price">${price}</span>
+        <span className="total-wrap"> ${total}</span>
         <div className="remove-button" onClick={() => clearItem(cartItem)}>&#9747;</div>
         
     </div>

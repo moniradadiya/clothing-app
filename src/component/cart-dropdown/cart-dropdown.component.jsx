@@ -10,7 +10,7 @@ import { toggleCartHidden } from "../../redux/cart/cart.action";
 
 import withRouter from '../router.component';
 
-// import { useNavigate } from "react-router";
+// import { useNavigate } from "react-router";  
 import { useNavigate } from "react-router-dom";
 
 
